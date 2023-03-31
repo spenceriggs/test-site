@@ -28,15 +28,8 @@ p {
 
 .container {
   display: flex;
-  justify-content: flex-end;
-}
-
-.nav-spacer {
-  flex-grow: 1;
-}
-
-.nav-brand {
-  font-size: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 a {
@@ -92,4 +85,30 @@ footer p {
 
 footer {
   margin-top: 10vh;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    float: none;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  #about {
+    height: 100%;
+  }
+  .disappear {
+    display: none;
+  }
 }
